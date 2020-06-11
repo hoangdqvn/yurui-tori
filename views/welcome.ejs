@@ -1,12 +1,55 @@
-<div class="row mt-5">
-  <div class="col-md-6 m-auto">
-    <div class="card card-body text-center">
-      <h1><i class="fab fa-node-js fa-3x"></i></h1>
-      <p>Create an account or login</p>
-      <a href="/users/register" class="btn btn-primary btn-block mb-2"
-        >Register</a
-      >
-      <a href="/users/login" class="btn btn-secondary btn-block">Login</a>
-    </div>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #4caf50;
+    color: white;
+  }
+
+  .topnav a.log {
+    background-color: red;
+    color: white;
+  }
+
+  .topnav-right {
+    float: right;
+  }
+</style>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#">Leaderboard</a>
+  <div class="topnav-right">
+    <a class="log" href="/users/register">Register</a>
+    <a class="active" href="/users/login">Login</a>
   </div>
+</div>
+<div>&nbsp;</div>
+<div>
+  <img
+    style="width: 1100px; height: 500px;"
+    src="https://lh3.googleusercontent.com/2dF49O0Kg4BZkhlVqmxXrBBJ72VgM8uMnFWQkLG7FkXmQgG-CLT4PfqRA-8BfBLh98d8ros9Fg=w640-h400-e365"
+  />
 </div>
