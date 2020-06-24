@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const passport = require("passport");
+var Const = require('../sharedConstants').constant;
+
 // Load User model
 const User = require("../models/User");
 const { forwardAuthenticated } = require("../config/auth");
@@ -91,7 +93,10 @@ router.post("/login", (req, res, next) => {
 router.get("/logout", (req, res) => {
   req.logout();
   req.flash("success_msg", "You are logged out");
-  res.render("welcome");
+  res.redirect('/');
+  // res.render("welcome", {
+  //   wsAddress: Const.SOCKET_ADDR + ':' + Const.SOCKET_PORT
+  // });
 });
 
 module.exports = router;
