@@ -1,3 +1,6 @@
+// // Load Point model
+// const Point = require('../models/Point');
+
 var MySQL = require('mysql');
 
 var DB_HOST = '127.0.0.1';

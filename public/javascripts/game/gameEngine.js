@@ -95,12 +95,12 @@ require(['javascripts/game/canvasPainter', 'javascripts/game/playersManager', '.
         console.log('Connection with the server lost :( ');
       });
 
-      // Try to retreive previous player name if exists
-      if (typeof sessionStorage != 'undefined') {
-        if ('playerName' in sessionStorage) {
-          document.getElementById('player-name').value = sessionStorage.getItem('playerName');
-        }
-      }
+      // // Try to retreive previous player name if exists
+      // if (typeof sessionStorage != 'undefined') {
+      //   if ('playerName' in sessionStorage) {
+      //     document.getElementById('player-name').value = sessionStorage.getItem('playerName');
+      //   }
+      // }
       
       // Draw bg and bind button click
       draw(0, 0);

@@ -11,7 +11,8 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('welcome', {
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
-    user: req.user
+    user: req.user,
+    wsAddress: Const.SOCKET_ADDR + ':' + Const.SOCKET_PORT
   })
 );
 
